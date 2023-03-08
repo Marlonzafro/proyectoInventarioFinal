@@ -2,6 +2,7 @@ import { PRECONNECT_CHECK_BLOCKLIST } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
+
 @Component({
   selector: 'app-crear-producto',
   templateUrl: './crear-producto.component.html',
@@ -29,6 +30,7 @@ export class CrearProductoComponent {
 
     enviarInformacion(){
         console.log(this.productoForm)
+
     }
 
 }
