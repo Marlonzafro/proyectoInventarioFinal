@@ -24,20 +24,16 @@
             <!-- Default box -->
             <form [formGroup]="productoForm" (ngSubmit)="enviarInformacion()">
 
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="modelo" formControlName="modelos" placeholder="Ingrese referencia">
-                    <label for="modelo">Modelos</label>
-                    <span *ngIf="productoForm.get('modelos')?.hasError('required') && productoForm.get('modelos')?.touched" class="text-danger fw-bold">Indigue la marca del equipo</span>
-                </div>
+
                 <div class="form-floating">
-                    <input type="text" class="form-control" id="fabricante" formControlName="fabricante" placeholder="fabricante">
-                    <label for="fabricante">Fabricante</label>
+                    <input type="text" class="form-control mb-4" id="fabricante" formControlName="fabricante" placeholder="Fabricante">
+
                     <span *ngIf="productoForm.get('fabricante')?.hasError('required') && productoForm.get('fabricante')?.touched" class="text-danger fw-bold">Indigue el fabricante del equipo</span>
                 </div>
 
                 <div class="form-floating">
-                    <input type="number" class="form-control" id="precio" formControlName="precio" placeholder="Ingrese el valor del equipo">
-                    <label for="precio">Precio</label>
+                    <input type="number" class="form-control mb-4" id="precio" formControlName="precio" placeholder="Ingrese el valor del equipo">
+
                     <span *ngIf="productoForm.get('precio')?.hasError('required') && productoForm.get('precio')?.touched" class="text-danger fw-bold">Indique el valor del equipo</span>
                 </div>
 
@@ -48,9 +44,9 @@
                 </div>
 
                 <div class="form-floating">
-                    <input type="text" class="form-control" id="asignado_a" formControlName="asignado_a" placeholder="Introduzca nombre completo">
-                    <label for="asignado_a">agisnado a:</label>
-                    <span *ngIf="productoForm.get('asignado_a')?.hasError('required') && productoForm.get('asignado_a')?.touched" class="text-danger fw-bold">Indique a quién asignará el equipo</span>
+                    <input type="text" class="form-control" id="asignadoA" formControlName="asignadoA" placeholder="Indique a quien será asignado el equipo">
+                    <label for="asignado_a"></label>
+                    <span *ngIf="productoForm.get('asignadoA')?.hasError('required') && productoForm.get('asignadoA')?.touched" class="text-danger fw-bold">Indique a quién asignará el equipo</span>
                 </div>
 
                 <div class="form-floating">
@@ -64,20 +60,16 @@
 
                   </div><br>
 
+
                 <div class="form-floating">
-                    <input type="option" class="form-control" id="estado1" formControlName="estado" placeholder="Seleccione una opción...">
-                    <label for="estado1">Estado</label>
+                    <input type="text" class="form-control mb-4" id="tock" placeholder="Tock">
+
                 </div>
 
                 <div class="form-floating">
-                    <input type="text" class="form-control" id="df" placeholder="STOK">
-                    <label for="df">DEFINIR STOK</label>
-                </div>
+                    <input type="number" class="form-control" id="cedula" formControlName="cedula" placeholder="cedula">
 
-                <div class="form-floating">
-                    <input type="number" class="form-control" id="numeroDocumento" formControlName="numeroDocumento" placeholder="Seleccione una opnción...">
-                    <label for="numeroDocumento">Documento de identidad</label>
-                    <span *ngIf="productoForm.get('numeroDocumento')?.hasError('required') && productoForm.get('numeroDocumento')?.touched" class="text-danger fw-bold">Indique el número del documento de identidad</span>
+                    <span *ngIf="productoForm.get('numeroDocumento')?.hasError('required') && productoForm.get('numeroDocumento')?.touched" class="text-danger fw-bold">Indique el número de cédula</span>
                 </div>
 
                 <div class="col-12 my-5 d-flex justify-content-center aling-items-center">

@@ -16,15 +16,13 @@ export class CrearProductoComponent {
     constructor(private fb: FormBuilder){
         this.productoForm = this.fb.group ({
 
-            modelos: ['', Validators.required],
             fabricante: ['', Validators.required],
             precio: ['', Validators.required],
             rutaImg: ['', Validators.required],
-            asignado_a: ['', Validators.required],
+            asignadoA: ['', Validators.required],
             estado: ['', Validators.required],
-            //stok//
-            numeroDocumento: ['', Validators.required],
-
+            tock: ['', Validators.required],
+            cedula: ['', Validators.required],
 
         })
     }
