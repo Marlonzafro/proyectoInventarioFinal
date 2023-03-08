@@ -13,6 +13,7 @@ import {RecoverPasswordComponent} from '@modules/recover-password/recover-passwo
 import {MainMenuComponent} from '@pages/main-menu/main-menu.component';
 import {SubMenuComponent} from '@pages/main-menu/sub-menu/sub-menu.component';
 import { CrearProductoComponent } from '@pages/crear-producto/crear-producto.component';
+import { GestionProductoComponent } from '@components/admin/gestion-producto/gestion-producto.component';
 
 const routes: Routes = [
     {
@@ -29,6 +30,12 @@ const routes: Routes = [
                 path: 'blank',
                 component: BlankComponent
             },
+
+            {
+                path: 'admin-producto',
+                component: GestionProductoComponent
+            },
+
             {
                 path: 'sub-menu-1',
                 component: SubMenuComponent
