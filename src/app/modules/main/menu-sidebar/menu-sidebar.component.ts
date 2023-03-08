@@ -33,19 +33,19 @@ export class MenuSidebarComponent implements OnInit {
 
 export const MENU = [
     {
-        name: 'Asignaciones',
+        name: 'Inicio',
         iconClasses: 'fas fa-tachometer-alt',
         path: ['/']
     },
 
     {
-        name: 'Productos',
+        name: 'Asignaciones',
         iconClasses: 'fas fa-file',
         path: ['/blank']
     },
 
     {
-        name: 'Crear Productos',
+        name: 'Crear Asignación',
         iconClasses: 'fas fa-file',
         path: ['/crear-producto']
     },

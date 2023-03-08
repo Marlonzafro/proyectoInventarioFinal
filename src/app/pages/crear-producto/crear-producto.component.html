@@ -18,7 +18,7 @@
 
 <!-- Main content -->
 <div class="container justify-content-center align-content-center">
-    <h1 class="mb-5">Crear producto en el inventario</h1>
+    <h1 class="mb-5">Crear asignación</h1>
     <div class="">
         <section class="content w-50">
             <!-- Default box -->
@@ -53,8 +53,8 @@
                     <label for="estado">Estado del equipo</label>
                     <select class="form-select" id="estado" formControlName="estado" aria-label="Floating label select example">
                       <option selected>Seleccione una opción...</option>
-                      <option value="1">Nuevo</option>
-                      <option value="2">Usado</option>
+                      <option value="1">Activo</option>
+                      <option value="2">Inactivo</option>
                     </select>
                     <span *ngIf="productoForm.get('estado')?.hasError('required') && productoForm.get('estado')?.touched" class="text-danger fw-bold">Indique el estado del equipo</span>
 

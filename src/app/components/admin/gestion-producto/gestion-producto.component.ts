@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GestionProductoComponent implements OnInit {
 
-    tituloComponete: string = 'crear'
+    tituloComponete: string = ''
 
     constructor() { }
 
