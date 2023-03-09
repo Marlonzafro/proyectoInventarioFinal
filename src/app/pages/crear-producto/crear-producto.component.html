@@ -8,7 +8,7 @@
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                     <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-                    <li class="breadcrumb-item active">Blank Page</li>
+
                 </ol>
             </div>
         </div>
@@ -66,8 +66,8 @@
                      <span *ngIf="productoForm.get('tock')?.hasError('required') && productoForm.get('tock')?.touched" class="text-danger fw-bold">Indique número de tock</span>
                 </div>
 
-                <div class="form-floating">
-                    <input type="number" class="form-control" id="cedula" formControlName="cedula" placeholder="cedula">
+                <div class="">
+                    <input type="number" class="form-control cedula" id="cedula" formControlName="cedula" placeholder="cedula">
 
                     <span *ngIf="productoForm.get('numeroDocumento')?.hasError('required') && productoForm.get('numeroDocumento')?.touched" class="text-danger fw-bold">Indique el número de cédula</span>
                 </div>
