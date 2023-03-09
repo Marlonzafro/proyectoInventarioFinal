@@ -67,13 +67,13 @@
                 </div>
 
                 <div class="">
-                    <input type="number" class="form-control cedula" id="cedula" formControlName="cedula" placeholder="cedula">
+                    <input type="number" class="form-control" class="cedula" id="cedula" formControlName="cedula" placeholder="cedula">
 
                     <span *ngIf="productoForm.get('numeroDocumento')?.hasError('required') && productoForm.get('numeroDocumento')?.touched" class="text-danger fw-bold">Indique el número de cédula</span>
                 </div>
 
                 <div class="col-12 my-5 d-flex justify-content-center aling-items-center">
-                    <button [disabled]="productoForm.invalid" class="btn btn-dark" type="submit">Crear producto</button>
+                    <button [disabled]="productoForm.invalid" routerlink="/" class="btn btn-dark" type="submit">Crear producto</button>
                   </div>
 
             </form>
