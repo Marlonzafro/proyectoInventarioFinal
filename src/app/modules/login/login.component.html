@@ -1,8 +1,9 @@
 <section class="login-container">
-  <div class="card card-outline card-success fondo">
+  <div class="card card-outline card-info fondo my-5">
     <div class="card-header text-center">
-      <a [routerLink]="['/']" class="h1"><b>Inventory</b>BIT</a>
+      <a [routerLink]="['/']" class="h1"><b>Inventory</b>BIT</a><img src="assets/img/logo1.png">
     </div>
+
     <div class="card-body">
       <p class="login-box-msg">Inicie sesión</p>
 
@@ -32,7 +33,7 @@
           </div>
           <!-- /.col -->
           <div class="col-5">
-            <pf-button [type]="'submit'" [block]="true" [loading]="isAuthLoading"
+            <pf-button [type]="'submit'" [block]="true" theme="dark" [loading]="isAuthLoading"
               [disabled]="isFacebookLoading || isGoogleLoading">
               Ingresar
             </pf-button>
@@ -44,7 +45,7 @@
       <div class="social-auth-links text-center mb-3">
 
         <pf-button class="mb-2" [block]="true" [loading]="isFacebookLoading"
-          [disabled]="isAuthLoading || isGoogleLoading" (click)="loginByFacebook()">
+          [disabled]="isAuthLoading || isGoogleLoading" theme="dark" (click)="loginByFacebook()">
           <i class="fab fa-facebook mr-2"></i>
           Ingrese con Facebook
 
