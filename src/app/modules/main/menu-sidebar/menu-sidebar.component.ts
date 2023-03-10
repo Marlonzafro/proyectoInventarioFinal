@@ -50,5 +50,31 @@ export const MENU = [
         path: ['/crear-producto']
     },
 
+    {
+        name: 'Facturación',
+        iconClasses: 'fas fa-file',
+        path: ['/c']
+    },
+
+    {
+        name: 'Reportes',
+        iconClasses: 'fas fa-file',
+        path: ['/t']
+    },
+
+    {
+        name: 'Contactos',
+        iconClasses: 'fas fa-file',
+        path: ['/u']
+    },
+
+    {
+        name: 'Configuración',
+        iconClasses: 'fas fa-file',
+        path: ['/o']
+    },
+
+
+
 
 ]
