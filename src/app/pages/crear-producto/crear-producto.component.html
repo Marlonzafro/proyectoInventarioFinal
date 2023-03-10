@@ -21,7 +21,7 @@
     <h1 class="mb-5">Crear asignación</h1>
     <div class="">
         <section class="content w-50">
-            <!-- Default box -->
+            <!-- Default box vvvvvv -->
             <form [formGroup]="productoForm" (ngSubmit)="enviarInformacion()">
 
 
@@ -39,7 +39,7 @@
 
                 <div class="form-floating">
                     <input type="file" class="form-control" id="imagen" formControlName="rutaImg" placeholder="inserte url">
-                    <label for="imagen">Imagen del producto</label>
+                    <label for="imagen">Imagen del Producto</label>
                     <span *ngIf="productoForm.get('imagen')?.hasError('required') && productoForm.get('imagen')?.touched" class="text-danger fw-bold">Seleccione la imagen del equipo</span>
                 </div>
 
